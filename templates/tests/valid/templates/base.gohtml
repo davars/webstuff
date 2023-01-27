@@ -1,0 +1,15 @@
+{{define "base"}}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>
+            Provided by templates: {{template "title" .}}
+        </title>
+    </head>
+    <body>
+    I'm the base.
+    A partial: {{template "nav" .}}
+    Provided by templates: {{template "main" .}}
+    </body>
+    </html>
+{{end}}
